@@ -257,7 +257,7 @@ Database Design Principles
 ```markdown
 | id  | title       | author        | price | stock | published_year |
 | --- | ----------- | ------------- | ----- | ----- | -------------- |
-| 4   | Refactoring | Martin Fowler | 50.00 | 3     | 1999           |
+| 4   | Refactoring | Martin Fowler | 66.55 | 3     | 1999           |
 ```
 
 3️⃣ **Find the total number of orders placed by each customer.**
@@ -278,7 +278,7 @@ Database Design Principles
 ```markdown
 total_revenue
 -----------------
-135.00
+148.24
 ```
 
 5️⃣ **List all customers who have placed more than one order.**
@@ -298,7 +298,7 @@ total_revenue
 ```markdown
 avg_book_price
 ----------------------------
-35.00
+40.96
 ```
 
 7️⃣ **Increase the price of all books published before 2000 by 10%.**
@@ -313,6 +313,7 @@ avg_book_price
 | 3   | You Don't Know JS            | Kyle Simpson       | 30.00  | 8     | 2014           |
 | 4   | Refactoring                  | Martin Fowler      | 55.00  | 3     | 1999           |
 | 5   | Database Design Principles   | Jane Smith         | 20.00  | 0     | 2018           |
+
 ```
 
 8️⃣ **Delete customers who haven't placed any orders.**
@@ -320,10 +321,11 @@ avg_book_price
 **Sample Output:** *(No table output, but affected rows will be removed accordingly.)*
 
 ```markdown
-| id  | name    | email              | joined_date  |
-| --- | ------- | ------------------ | ------------ |
-| 1   | Alice   | alice@email.com    | 2023-01-10   |
-| 2   | Bob     | bob@email.com      | 2022-05-15   |
+| id  | name   | email           | join_date  |
+|-----|--------|------------------|------------|
+| 1   | Alice  | alice@email.com  | 2023-01-10 |
+| 2   | Bob    | bob@email.com    | 2022-05-15 |
+
 ```
 
 ---
